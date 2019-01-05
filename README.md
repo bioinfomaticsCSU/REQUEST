@@ -1,6 +1,10 @@
 # REQUEST
 
 REQUEST is a novel REad QUality Evaluation and Selection Tool (REQUEST) for evaluating the quality of third generation long reads.
+## License
+
+Copyright (C) 2018 Hongdong Li (hongdong@csu.edu.cn), Wenjing Zhang (wjzhang@csu.edu.cn)
+School of Information Science and Engineering Central South University ChangSha CHINA, 410083
 
 ## Environment
 - R 
