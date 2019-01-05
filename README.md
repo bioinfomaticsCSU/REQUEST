@@ -47,9 +47,9 @@ TGCGTAAAAGGAGGCGGTTTGCGGTGGCG
  ```
  
  ### Output files
- ***.ft**   *Each row represents the all 84 kinds of base rates and the length of a read.*
- ***.fa.ft.sqscore**   *the list of sqscores of the input fa_file.*
-***.score.sort.fa**    *the reads with sqscores*. As follows:
+ ***.ft**   *Each row represents the all 84 kinds of base rates and the length of a read.
+ ***.fa.ft.sqscore**   *the list of sqscores of the input fa_file.
+ ***.score.sort.fa**    *the reads with sqscores*. As follows:
 ```
 # >Task_ID_sqscore
 >test_out.6778_5.713
