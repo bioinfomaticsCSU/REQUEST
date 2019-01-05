@@ -43,6 +43,8 @@ TTACGTATTGCTGTGGAAGCCTTCAT
 >Reads_2
 TGCGTAAAAGGAGGCGGTTTGCGGTGGCG
 ```
+Test data: [MAP006-PCR-1_2D_pass.fasta](http://nanopore.s3.climb.ac.uk/MAP006-PCR-1_2D_pass.fasta)
+
 
  ### REQUEST pipeline
  You can use *REQUEST_main.sh* .
