@@ -1,10 +1,6 @@
 # REQUEST
 
 REQUEST is a novel REad QUality Evaluation and Selection Tool (REQUEST) for evaluating the quality of third generation long reads.
-## License
-
-Copyright (C) 2018 Hongdong Li (hongdong@csu.edu.cn), Wenjing Zhang (wjzhang@csu.edu.cn)
-School of Information Science and Engineering Central South University ChangSha CHINA, 410083
 
 ## Environment
 - R 
@@ -43,8 +39,6 @@ TTACGTATTGCTGTGGAAGCCTTCAT
 >Reads_2
 TGCGTAAAAGGAGGCGGTTTGCGGTGGCG
 ```
-Test data: [MAP006-PCR-1_2D_pass.fasta](http://nanopore.s3.climb.ac.uk/MAP006-PCR-1_2D_pass.fasta)
-
 
  ### REQUEST pipeline
  You can use *REQUEST_main.sh* .
@@ -53,12 +47,9 @@ Test data: [MAP006-PCR-1_2D_pass.fasta](http://nanopore.s3.climb.ac.uk/MAP006-PC
  ```
  
  ### Output files
- ***.ft**   *Each row represents the all 84 kinds of base rates and the length of a read.
- 
- ***.fa.ft.sqscore**   *the list of sqscores of the input fa_file.
- 
- ***.score.sort.fa**    *the reads with sqscores*. As follows:
- 
+ ***.ft**   *Each row represents the all 84 kinds of base rates and the length of a read.*
+ ***.fa.ft.sqscore**   *the list of sqscores of the input fa_file.*
+***.score.sort.fa**    *the reads with sqscores*. As follows:
 ```
 # >Task_ID_sqscore
 >test_out.6778_5.713
