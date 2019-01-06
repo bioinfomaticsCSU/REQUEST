@@ -3,6 +3,12 @@
 REQUEST is a novel REad QUality Evaluation and Selection Tool (REQUEST) for evaluating the quality of third generation long reads.
 
 ## Environment
+- REQUEST
+```
+git clone https://github.com/bioinfomaticsCSU/REQUEST.git
+PATH=$PATH:/home/.../REQUEST
+# if not set the PATH. You can move the raw data into the REQUEST.
+```
 - R 
 - Python 2.7+
 - MECAT
