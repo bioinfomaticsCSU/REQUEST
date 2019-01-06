@@ -23,7 +23,9 @@ PATH=$PATH:/home/.../MECAT/Linux-amd64/bin
 If not, you can use *fa2fa.py* to convert the format. Usage:
  ```
 python fa2fa.py input.fa output.fa
-
+```
+Description of data:
+```
 Input fa:
 >Reads_1
 TTACGTATTG
@@ -49,8 +51,11 @@ TGCGTAAAAGGAGGCGGTTTGCGGTGGCG
  
  ### Output files
  ***.ft**   *Each row represents the all 84 kinds of base rates and the length of a read.*
+ 
  ***.fa.ft.sqscore**   *the list of sqscores of the input fa_file.*
+ 
 ***.score.sort.fa**    *the reads with sqscores*. As follows:
+
 ```
 # >Task_ID_sqscore
 >test_out.6778_5.713
