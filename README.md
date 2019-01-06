@@ -10,7 +10,8 @@ REQUEST is a novel REad QUality Evaluation and Selection Tool (REQUEST) for eval
 git clone https://github.com/xiaochuanle/MECAT.git
 cd MECAT
 make 
-cd ..
+cd 
+PATH=$PATH:/home/.../MECAT/Linux-amd64/bin
 ```
 ## Data processing
  ### Input format
