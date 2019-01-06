@@ -2,6 +2,11 @@
 
 REQUEST is a novel REad QUality Evaluation and Selection Tool (REQUEST) for evaluating the quality of third generation long reads.
 
+## License
+
+Copyright (C) 2018 Hongdong Li (hongdong@csu.edu.cn), Wenjing Zhang (wjzhang@csu.edu.cn)
+School of Information Science and Engineering Central South University ChangSha CHINA, 410083
+
 ## Environment
 - REQUEST
 ```
@@ -21,7 +26,10 @@ PATH=$PATH:/home/.../MECAT/Linux-amd64/bin
 ```
 ## Data processing
  ### Input format
- REQUEST is capable of processing FASTA files, which contains 2 lines to  lines represent a read.  For example:
+ REQUEST is capable of processing FASTA files, which contains 2 lines to  lines represent a read. You can download the test data: [MAP006-PCR-1_2D_pass.fasta](http://nanopore.s3.climb.ac.uk/MAP006-PCR-1_2D_pass.fasta)
+ 
+ 
+ For example:
  ```
  >Reads_1
  GCCATGCTTCCGTTTCAGTTACGTATTGCTGTGGAAGCTGTCGGACGA
@@ -29,9 +37,7 @@ PATH=$PATH:/home/.../MECAT/Linux-amd64/bin
 If not, you can use *fa2fa.py* to convert the format. Usage:
  ```
 python fa2fa.py input.fa output.fa
-```
-Description of data:
-```
+
 Input fa:
 >Reads_1
 TTACGTATTG
@@ -60,8 +66,9 @@ TGCGTAAAAGGAGGCGGTTTGCGGTGGCG
  
  ***.fa.ft.sqscore**   *the list of sqscores of the input fa_file.*
  
-***.score.sort.fa**    *the reads with sqscores*. As follows:
+***.score.sort.fa**    *the reads with sqscores*.
 
+As follows:
 ```
 # >Task_ID_sqscore
 >test_out.6778_5.713
@@ -81,3 +88,7 @@ rm  *.tab  $task.fa
 paste $FQ.ft.sqscore $FQ.tab  > $FQ.score.tab
 python tab2fa.py  $FQ.score.tab $task.score.fa
 ```
+## Possible problems
+
+- ***Segmentation fault***
+This is generally because there are too many programs running at the same time, so you can change the *"-t 100"* into *"-t 20"* in the line 7 or 8  in the *REQUEST_main.sh* file.
