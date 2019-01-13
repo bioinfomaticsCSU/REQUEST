@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+# input: Fixed length fasta file
+# output: fasta file : 2 lines represent one read.
 from sys import argv
 
 def fa2fa(org,out):
